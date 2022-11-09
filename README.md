@@ -18,7 +18,7 @@ Web JS posenet&amp;movenet image keypoint detection and skeleton drawing
 <h3>Movenet Result</h3>
 
 ![대체 텍스트](./movenet.png)
-![대체 텍스트](./posenet_pose.png)
+![대체 텍스트](./movenet_pose.png)
 
 # need
 none
