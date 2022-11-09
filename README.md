@@ -27,4 +27,4 @@ none
 Coding everything except posenet.js
 
 # Production period
-2022 10 26 ~ 2022 11 08
+2022 10 30 ~ 2022 11 08
