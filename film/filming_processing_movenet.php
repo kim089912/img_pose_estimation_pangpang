@@ -360,8 +360,8 @@
 		}
 
 		if(check_count==2 && check_sucess==2){
-			console.log(front_data);
-			console.log(side_data);
+			console.log(front_pose);
+			console.log(side_pose);
 
 		} else if (check_count==1 && check_sucess==0) {
 			error();

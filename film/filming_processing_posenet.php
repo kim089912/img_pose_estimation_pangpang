@@ -181,6 +181,8 @@
     const side_context = side_canvas.getContext("2d");
 
 	//키포인트 좌표 담을 변수
+	var front_pose;
+	var side_pose;
 	var front_data = [];
 	var side_data = [];
 
@@ -192,7 +194,7 @@
 	//가이드 이미지 posenet 로드
 	function front_pose_load(){
 		posenet.load().then(function (net) {
-			const front_pose = net.estimateSinglePose(front_img, {
+			front_pose = net.estimateSinglePose(front_img, {
 				flipHorizontal: false
 			});
 
@@ -222,7 +224,7 @@
 	function side_pose_load(){
 		//alert("사람 인식을 시작합니다.");
 		posenet.load().then(function (net) {
-			const side_pose = net.estimateSinglePose(side_img, {
+			side_pose = net.estimateSinglePose(side_img, {
 				flipHorizontal: false
 			});
 
@@ -264,8 +266,8 @@
 		}
 
 		if(check_count==2 && check_sucess==2){
-			console.log(front_data);
-			console.log(side_data);
+			console.log(front_pose);
+			console.log(side_pose);
 
 		} else if (check_count==1 && check_sucess==0) {
 			error();
